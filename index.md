@@ -82,13 +82,12 @@ In non-parallel style transfer, the TTS system must transfer prosodic style when
     </tr>
 </table>
 
+### HAPPY
 <table>
     <tr>
-	<th> Reference Text:</th>
 	<th> Reference Audio</th>
     </tr>
     <tr>
-       	<th> Clear than clear water? (sad) </th>
        	<th> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/Demo/ref_happy.wav" type="audio/mpeg"></audio> </th>
     </tr>
 	
@@ -97,7 +96,7 @@ In non-parallel style transfer, the TTS system must transfer prosodic style when
 	<th> proposed</th>
     </tr>
     <tr>
-	<th> We have been fine, haven't we? </th>
+	<th> I read a few lines, but I did not understand a word. </th>
        	<th> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/Demo/happy_1.wav" type="audio/mpeg"></audio> </th>
     </tr>
 </table>
