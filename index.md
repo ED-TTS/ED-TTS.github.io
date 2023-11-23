@@ -1,16 +1,16 @@
 <!-- <p align="justify">
-In this post, we show the demo of QI-TTS: Questioning Intonation Control for Emotional Speech Synthesis
+In this post, we show the demo of ED-TTS: Multi-Scale Emotion Modeling using Cross-Domain Emotion Diarization for Emotional Speech Synthesis
 </p> -->
 
 ## Abstract
 <p align="justify">
-Recent expressive text to speech (TTS) models focus on synthesizing emotional speech, but some fine-grained styles such as intonation are neglected. In this paper, we aim to better transfer and control intonation to further deliver the speaker's questioning intention while transferring emotion from reference speech. We propose a multi-style extractor to extract style embedding from two different levels. While the sentence level represents emotion, the final syllable level represents intonation. For fine-grained intonation control, we use relative attributes to represent intonation intensity at the syllable level. To reduce the overlap of information between style embedding and content embedding, an adversarial content predictor with gradient reversal layer is adopted. Experimental results validate the effectiveness of our proposed method for improving intonation expressiveness in emotional speech synthesis.  
+Previous emotional speech synthesis methods use an utterance level style embedding extracted from reference audio, which ignores the multi-scale nature of speech prosody. In this paper, we propose ED-TTS, a multi-scale emotional speech synthesis framework based on Speech Emotion Diarization (SED) and Speech Emotion Recognition (SER) to model the emotion from different levels. Specifically, the proposed method combines utterance-level emotion embedding extracted by SER with fine-grained frame-level emotion embeddings extracted by a SED model to condition the reverse process of denoising diffusion probabilistic model (DDPM). Moreover, we employ cross-domain SED to predict accurate soft labels, solving the problem of lack of fine-grained emotion-annotated dataset for supervising emotional TTS training. ED-TTS significantly outperforms recent emotional TTS baselines in both objective and subjective evaluation.
 </p>
 
 ## Model Architecture
 
-![]({{ site.url }}/assets/image/baseline (3).png) 
-The overview architecture for QI-TTS. The red part of reference audio refers to final syllable. ”GRL” denotes gradient reversal layer. Rs and Rf denote the reference embedding of the reference sentence and that of the final syllable, respectively. Gs and Gf denote emotion and intonation embedding. hi represents intonation intensity embedding.
+![]({{ site.url }}/assets/image/ICASSP 2024.pdf) 
+The overview of ED-TTS and cross-domain training for SED. The color in waveforms denotes the predicted frame-level emotion labels by SED (e.g. red for non-neutral and blue for neutral). Extracter denotes CNN-based feature encoder of SED 
 
 ## Experiment
 ### Dataset
