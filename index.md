@@ -16,13 +16,12 @@ The overview of ED-TTS and cross-domain training for SED. The color in waveforms
 ### Non-Parallel Transfer
 In non-parallel style transfer, the TTS system must transfer prosodic style when the source and target text are completely different.
 
+### SAD
 <table>
     <tr>
-	<th> Reference Text:</th>
 	<th> Reference Audio</th>
     </tr>
     <tr>
-       	<th> Clear than clear water? (sad) </th>
        	<th> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/Demo/ref_sad.wav" type="audio/mpeg"></audio> </th>
     </tr>
 	
@@ -31,24 +30,22 @@ In non-parallel style transfer, the TTS system must transfer prosodic style when
 	<th> proposed</th>
     </tr>
     <tr>
-	<th> We have been fine, haven't we? </th>
+	<th> For some reason, I can't explain. </th>
        	<th> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/Demo/sad_1.wav" type="audio/mpeg"></audio> </th>
     </tr>
     <tr>
-	<th> Do you know the lid opens? </th>
+	<th> A friendly waiter taught me a few words of Italian. </th>
        	<th> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/Demo/sad_2.wav" type="audio/mpeg"></audio> </th>
     </tr>
 </table>	
 
 
-
+### ANGRY
 <table>
     <tr>
-	<th> Reference Text:</th>
 	<th> Reference Audio</th>
     </tr>
     <tr>
-       	<th> Clear than clear water? (sad) </th>
        	<th> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/Demo/ref_angry.wav" type="audio/mpeg"></audio> </th>
     </tr>
 	
@@ -57,18 +54,17 @@ In non-parallel style transfer, the TTS system must transfer prosodic style when
 	<th> proposed</th>
     </tr>
     <tr>
-	<th> We have been fine, haven't we? </th>
+	<th> I read a few lines, but I did not understand a word. </th>
        	<th> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/Demo/angry_1.wav" type="audio/mpeg"></audio> </th>
     </tr>
 </table>
 
+### NEUTRAL
 <table>
     <tr>
-	<th> Reference Text:</th>
 	<th> Reference Audio</th>
     </tr>
     <tr>
-       	<th> Clear than clear water? (sad) </th>
        	<th> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/Demo/ref_neutral.wav" type="audio/mpeg"></audio> </th>
     </tr>
 	
@@ -77,7 +73,7 @@ In non-parallel style transfer, the TTS system must transfer prosodic style when
 	<th> proposed</th>
     </tr>
     <tr>
-	<th> We have been fine, haven't we? </th>
+	<th> Shattered windows and the sound of drums. </th>
        	<th> <audio controls id="player" onplay="pauseOthers(this);"><source src="assets/Demo/neutral_1.wav" type="audio/mpeg"></audio> </th>
     </tr>
 </table>
